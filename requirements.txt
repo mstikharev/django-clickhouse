@@ -1,6 +1,6 @@
 celery
 Django (>=1.7)
-git+https://github.com/mstikharev/infi.clickhouse_orm
+infi.clickhouse-orm @ git+https://github.com/mstikharev/infi.clickhouse_orm
 pytz; python_version < '3.3'
 statsd
 typing; python_version < '3.5'
