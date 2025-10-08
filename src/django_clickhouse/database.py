@@ -16,8 +16,10 @@ class Database(InfiDatabase):
     def __init__(self, **kwargs):
         infi_kwargs = {
             k: kwargs[k]
-            for k in ('db_name', 'db_url', 'username', 'password', 'readonly', 'autocreate', 'timeout',
-                      'verify_ssl_cert')
+            for k in (
+                'db_name', 'db_url', 'username', 'password', 'readonly', 'autocreate', 'timeout',
+                'verify_ssl_cert', 'client_cert', 'client_key', 'ca'
+            )
             if k in kwargs
         }
         super(Database, self).__init__(**infi_kwargs)
